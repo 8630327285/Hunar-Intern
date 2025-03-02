@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.course-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer .social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Mobile-first Design */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .course-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    min-width: 100%;
+  }
+}
+
+/* Desktop Design */
+@media screen and (min-width: 768px) {
+  .course-categories {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .category {
+    min-width: 45%;
+  }
+}
