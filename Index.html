@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Short bio about yourself.</p>
+    <button id="toggleDetails">Read More</button>
+    <div id="moreDetails" style="display: none;">
+      <p>Here’s a more detailed bio, fun facts, and extra info.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>JavaScript, HTML, CSS, React...</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <button class="view-details">View Details</button>
+      <div class="project-details" style="display: none;">
+        <p>Description: This project is about...</p>
+        <p>Technologies: HTML, CSS, JavaScript</p>
+        <a href="https://github.com/your-repo" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <!-- Add more project cards as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact: 8630327285</h2>
+    <p>Email: nitinkumar18119@gmail.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
